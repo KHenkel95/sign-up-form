@@ -76,8 +76,7 @@
 
   .logo-container{
     display: flex;
-    background: black;
-    opacity: 0.4;
+    background-color: rgba(57, 57, 57, 0.6);
     flex: 1;
     justify-content: center;
   }

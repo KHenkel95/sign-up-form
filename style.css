@@ -1,102 +1,156 @@
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
   
-  /* 2. Remove default margin */
-  * {
-    margin: 0;
-  }
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
   
-  body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
-  }
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
   
-  /* 5. Improve media defaults */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
   
-  /* 6. Inherit fonts for form controls */
-  input, button, textarea, select {
-    font: inherit;
-  }
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
   
-  /* 7. Avoid text overflows */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
   
-  /* 8. Improve line wrapping */
-  p {
-    text-wrap: pretty;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-  }
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
   
-  /*
-    9. Create a root stacking context
-  */
-  #root, #__next {
-    isolation: isolate;
-  }
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
 
-  a {
-    color: inherit;
-  }
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
 
-  body{
-    display: flex;
-  }
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  .side-container{
-    position: relative;
-    flex-direction: column;
-    width: 100%;
-    flex: 1;
-    display: flex;
-    align-items: center;
-  }
+fieldset {
+  position: relative;
+  padding: 30px;
+  background-color: white;
+}
 
-  .main-content-container{
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-  }
+legend {
+  position: absolute;
+  top: 0;
+}
 
-  .side-image{
-    position: absolute;
-    z-index: -1;
-    min-height: 688px;
-  }
+@font-face{
+  font-family: norse-bold;
+  src: url(../fonts/norse-bold-webfont.woff);
+}
 
-  .side-container-content{
-    width: 100%;
-    height: 100vh;
-  }
+a {
+  color: inherit;
+}
 
-  .logo-container{
-    display: flex;
-    background-color: rgba(57, 57, 57, 0.6);
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-  }
+body{
+  display: flex;
+}
 
-  .logo-image{
-    width: 80px;
-  }
+.side-container{
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
 
-  .photo-credit{
-    position: absolute;
-    bottom: 0px;
-    color: white;
-  }
+.main-content-container{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  background-color: rgb(245, 245, 245);
+}
+
+.main-content-text{
+  font-size: 20px;
+  width: 75%;
+}
+
+.side-image{
+  position: absolute;
+  z-index: -1;
+  min-height: 688px;
+}
+
+.side-container-content{
+  width: 100%;
+  height: 100vh;
+}
+
+.logo-container{
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  display: flex;
+  background-color: rgba(57, 57, 57, 0.6);
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.logo-image{
+  width: 80px;
+}
+
+.logo-text{
+  font-family: norse-bold, sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.photo-credit{
+  position: absolute;
+  bottom: 0px;
+  color: white;
+}
+
+.submit-button{
+  background-color: #b2c2da;
+}

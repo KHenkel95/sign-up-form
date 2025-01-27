@@ -65,6 +65,10 @@ button {
   box-sizing: border-box;
 }
 
+input{
+  outline: none;
+}
+
 fieldset {
   position: relative;
   padding: 50px 30px 30px 30px;
@@ -179,10 +183,9 @@ body{
   height: 45px;
 }
 
-.sign-up-form{
+#sign-up-form{
   background-color: white;
   box-shadow: 0px 3px 3px rgb(215, 215, 215);
-  /* padding: 30px; */
 }
 
 .form-row{
@@ -206,4 +209,12 @@ body{
   font-weight: 700;
   font-size: 12px;
   color: rgb(57, 57, 57);
+}
+
+input[type="password"]:invalid{
+  border: 2px solid red;
+}
+
+input:focus{
+  border: 2px solid #b2c2da;
 }

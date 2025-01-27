@@ -67,13 +67,13 @@ button {
 
 fieldset {
   position: relative;
-  padding: 30px;
-  background-color: white;
+  padding: 50px 30px 30px 30px;
+  border: 0;
 }
 
 legend {
   position: absolute;
-  top: 0;
+  top: 10px;
 }
 
 @font-face{
@@ -81,7 +81,7 @@ legend {
   src: url(../fonts/norse-bold-webfont.woff);
 }
 
-a {
+.photo-credit a{
   color: inherit;
 }
 
@@ -109,13 +109,33 @@ body{
 
 .main-content-text{
   font-size: 20px;
-  width: 75%;
+  width: 70%;
+  padding: 30px;
+  font-weight: 700;
+}
+
+.selling-line{
+  padding-top: 10px;
+}
+
+.main-content-bottom-container{
+  padding-left: 30px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-content-bottom-container a{
+  color: #b2c2da;
+  text-decoration: none;
 }
 
 .side-image{
   position: absolute;
   z-index: -1;
-  min-height: 688px;
+  height: 100vh;
+  width: 100%;
 }
 
 .side-container-content{
@@ -125,7 +145,7 @@ body{
 
 .logo-container{
   position: absolute;
-  top: 200px;
+  top: 183px;
   width: 100%;
   display: flex;
   background-color: rgba(57, 57, 57, 0.6);
@@ -141,7 +161,7 @@ body{
 
 .logo-text{
   font-family: norse-bold, sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
 }
 
@@ -153,4 +173,37 @@ body{
 
 .submit-button{
   background-color: #b2c2da;
+  border: none;
+  border-radius: 6px;
+  width: 210px;
+  height: 45px;
+}
+
+.sign-up-form{
+  background-color: white;
+  box-shadow: 0px 3px 3px rgb(215, 215, 215);
+  /* padding: 30px; */
+}
+
+.form-row{
+  display: flex;
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+.form-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 100px;
+}
+
+.form-item input{
+  width: 100%;
+}
+
+.form-item label{
+  font-weight: 700;
+  font-size: 12px;
+  color: rgb(57, 57, 57);
 }

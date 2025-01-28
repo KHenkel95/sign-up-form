@@ -89,6 +89,10 @@ legend {
   color: inherit;
 }
 
+.photo-credit{
+  font-size: 14px;
+}
+
 body{
   display: flex;
 }
@@ -113,7 +117,7 @@ body{
 
 .main-content-text{
   font-size: 20px;
-  width: 70%;
+  width: 65%;
   padding: 30px;
   font-weight: 700;
 }
@@ -133,6 +137,7 @@ body{
 .main-content-bottom-container a{
   color: #b2c2da;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .side-image{
@@ -181,6 +186,14 @@ body{
   border-radius: 6px;
   width: 210px;
   height: 45px;
+}
+
+.submit-button:hover{
+  background-color: #c4cad4;  
+}
+
+.submit-button:active{
+  background-color: #81a5dc;
 }
 
 #sign-up-form{

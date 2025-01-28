@@ -47,19 +47,10 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-}
-
 input,
 textarea,
 select,
 button {
-  width: 150px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -216,6 +207,8 @@ body{
 
 .form-item input{
   width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
 }
 
 .form-item label{
@@ -230,4 +223,5 @@ input[type="password"]:invalid{
 
 input:focus{
   border: 2px solid #b2c2da;
+  box-shadow: 1px 1px 1px #a4c6f9;
 }
